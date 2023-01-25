@@ -11,16 +11,16 @@ namespace MoodAnalyser_Testing
         public void TestMethod1()
         {
             string message = "i am sad";
-            Mood a= new Mood();
-            string mood = a.check(message);
+            Mood a= new Mood(message);
+            string mood = a.check();
             Assert.AreEqual(mood, "sad");
         }
         [TestMethod]
         public void TestMethod2()
         {
-            string message = "i am happy";
-            Mood a = new Mood();
-            string mood = a.check(message);
+            string message = "i am Happy";
+            Mood a = new Mood(message);
+            string mood = a.check();
             Assert.AreEqual(mood, "happy");
         }
     }

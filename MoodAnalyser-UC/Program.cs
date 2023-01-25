@@ -6,12 +6,20 @@ namespace MoodAnalyser_UC
     {
         static void Main(string[] args)
         {
-           
-            Mood a= new Mood();
-            Console.WriteLine("Enter mood");
-            string c= Console.ReadLine();
-          Console.WriteLine(  a.check(c));
             
+            Mood a = new Mood("i am saad");
+            Mood b = new Mood("i am happy");
+           
+            Console.WriteLine("Enter mood");
+            string c = Console.ReadLine();
+           Console.WriteLine( a.check());
+            Console.WriteLine( b.check());
+           
+
+
+
+
+
         }
     }
 }
