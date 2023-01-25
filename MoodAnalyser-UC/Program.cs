@@ -7,7 +7,7 @@ namespace MoodAnalyser_UC
         static void Main(string[] args)
         {
             
-            Mood a = new Mood("i am saad");
+            Mood a = new Mood("i am sad");
             Mood b = new Mood("i am happy");
            
             Console.WriteLine("Enter mood");

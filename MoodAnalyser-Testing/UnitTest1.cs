@@ -18,10 +18,18 @@ namespace MoodAnalyser_Testing
         [TestMethod]
         public void TestMethod2()
         {
-            string message = "i am Happy";
+            string message = " Happy";
             Mood a = new Mood(message);
             string mood = a.check();
             Assert.AreEqual(mood, "happy");
+        }
+        [TestMethod]
+        public void TestMethod3()
+        {
+            string message= "i am in any mood";
+            Mood a= new Mood(message);
+            string mood = a.check();
+            Assert.AreEqual(mood, "Happy");
         }
     }
 }

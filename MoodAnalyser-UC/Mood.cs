@@ -17,18 +17,31 @@ namespace MoodAnalyser_UC
 
         public string check()
         {
-            if (this.message.Contains("sad"))
-            {
-                return "sad";
+            //try
+            //{
+                if (this.message.Contains("i am sad"))
+                {
+                    return "sad";
 
 
-            }
-            
-            if (this.message.Contains(" Happy"))
-            {
-               return "happy";
-            }
-            return "i don't know";
+                }
+
+                if (this.message.Contains("i am Happy"))
+                {
+                    return "happy";
+                }
+                if(this.message.Contains("i am in any mood"))
+                {
+                    return "Happy";
+                }
+            //}
+            //catch (Exception e)
+            //{
+            //    return "happy";
+            //}
+            return "don't know";
+
+
         }
       
     }
