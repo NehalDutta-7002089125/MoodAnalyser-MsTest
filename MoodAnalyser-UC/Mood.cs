@@ -8,41 +8,38 @@ namespace MoodAnalyser_UC
     public class Mood
     {
         public string message;
-        
+
         public Mood(string message)
         {
             this.message = message;
-            
+
         }
 
-        public string check()
+        public  string check()
         {
-            //try
-            //{
-                if (this.message.Contains("i am sad"))
+            if (message.Contains(null))
+            {
+                return "null";
+            }
+                if (message.Contains("i am sad"))
                 {
                     return "sad";
 
 
                 }
-
-                if (this.message.Contains("i am Happy"))
+                if (message.Contains("i am any mood"))
                 {
                     return "happy";
                 }
-                if(this.message.Contains("i am in any mood"))
+                else
                 {
-                    return "Happy";
+                    return "happy";
                 }
-            //}
-            //catch (Exception e)
-            //{
-            //    return "happy";
-            //}
-            return "don't know";
-
+            
+            
 
         }
-      
+
+
     }
 }
